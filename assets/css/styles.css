@@ -11,9 +11,10 @@
 
 /* NAV */
 nav{
+    position:relative;
     background-color: #197f5b;
-    width: 87rem;
-    height: 7rem;
+    width: 100%;
+    height: 3rem;
     z-index: 1;
 }
 
@@ -28,7 +29,7 @@ nav > ul{
 
 nav > ul > li{
     display: inline-block;
-    line-height: 7rem;
+    line-height: 3rem;
     margin: 0 5px;
 }
 
@@ -36,8 +37,7 @@ nav > ul > li > a{
     list-style: none;
     text-decoration: none;
     color: white; 
-    font-size: 30px;
-    padding: 0 1rem;
+    font-size: 16px;
 }
 
 a.active-barra, a:hover{
@@ -73,6 +73,7 @@ a.active-barra, a:hover{
         position: relative;
         width: 100%;
         height: 3rem;
+        background-color: #197f5b;
     }
     
     nav > ul{
@@ -117,7 +118,7 @@ a.active-barra, a:hover{
 }
 
 .vector-desktop{
-    display: none;
+    display: none
 }
 
 .luis-carrillo{
@@ -138,7 +139,7 @@ a.active-barra, a:hover{
     transform: translate(-50%);
     
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1rem;
     width: 20rem;
 
     color: #ffffff;
@@ -238,56 +239,54 @@ a.active-barra, a:hover{
             }
 
             .vector-desktop{
-                display: unset;
+                display: block;
+                max-width: 100%;
             }
 
             .title{
-                top: 10rem;
-
-                font-size: 5rem;
-                width: auto;
+                top: 14%;
+                font-size: 3rem;
+                width: 55%
             }
 
             .sub-title{
-                top: 16rem;
-                font-size: 3rem;
-               
-                width:50rem;
+                top: 23%;
+                font-size: 1.5rem;
+                width:55%;
             }
 
             .perfil{
-                border-radius: 8rem 8rem;
-                top: 31rem;
-
-                width: 24rem;
-                height: 32rem;
+                border-radius: 25% 25%;
+                top: 42.5%;
+                width: 25%;
+                height: 42%;
             }
 
             .ui-designer, .frontend{
-                top: 28rem;
-                left: 30.5%;
+                top: 38%;
+                left: 30%;
 
-                width: 11rem;
-                height: 4.5rem;
+                width: 14%;
+                height: 7%;
 
-                font-size: large;
+                font-size: small;
             }
 
             .frontend{
-                top: 40rem;
+                top: 55%;
                 left: 70%;
             }
 
             .linkedin-logo-container, .instagram-logo-container, .twitter-logo-container{
-                width: 4.8rem;
-                height: 4.8rem;
+                width: 2.8rem;
+                height: 2.8rem;
 
-                top: 60rem;
+                top: 80%;
                 left: 34%;
             }
 
             .instagram-logo-container{
-                top: 64.5rem;
+                top: 87%;
                 left: 50%;
             }
 
@@ -296,8 +295,8 @@ a.active-barra, a:hover{
             }
 
             .linkedin-logo, .twitter-logo, .instagram-logo{
-                width: 45px;
-                height: 45px;
+                width: 2rem;
+                height: 2rem;
             }
         }
 
@@ -380,46 +379,59 @@ input[type="submit"]{
         position: relative;
 
         top: -2rem;
-        left: 45rem;
+        left: 50%;
         transform: translate(-50%);
 
         /* border: 2px solid black; */
         height: 12rem;
-        width: 55rem;
+        width: 65%;
     }
     
     .box{
-        left: 12rem;
-        top: 2rem;
+        left: 11rem;
+        top: 0rem;
+        /* border: 2px solid tomato; */
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 50%;
     }
     
     .head-input{
+        position: relative;
+        left: 0;
+        top: 2rem;
+
         display: flex;
         justify-content: center;
-        width: 50rem;
+        width: 100%;
 
-        font-size: 25px;
+        font-size: large;
         font-weight: 400;
         /* border: 2px solid black */
     }
 
     input{
-        left: 2%;
         top: 4.2rem;
     }
-
+    
     input[type="text"]{
+        position:relative;
         height: 3.2rem;
-        width: 50rem;
+        width: 90%;
         font-size: 16px;
-        padding: 0 2rem;
+        
+        /* border: 2px solid blue; */
     }
 
     input[type="submit"]{
-        top: 1.7rem;
+        position: relative;
+
+        top: 1.2rem;
         height: 2.8rem;
-        left: 36rem;
-        width: 14rem;
+        left: 69%;
+        width: 25%;
+        
     }
 }
 
@@ -464,30 +476,32 @@ input[type="submit"]{
 @media screen and (min-width:600px) {
     .acerca-de{
         top: 1rem;
-        
-        padding-left: 10%;
-        padding-right: 10%;
+        left: 5%;
         height: 15rem;
-        width: 90rem;
+        width: 90%;
     }
 
     .acerca-title{
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .acerca-contenido{
-        font-size: 25px;
-        margin-left: 2rem;
+        font-size: 20px;
+        margin: 0 .5rem;
+        max-height: 80%;
+        padding-right: 0;
     }
 
     .vertical-linea{
-        position: absolute;
+        position: relative;
         border-left: 8px solid #197f5b;
+        max-height: 80%;
+        
     }
 }
 
                 /* BUTTON DOWNLOAD CV */
-        
+
 .button-cv > button {
     position: relative;
     top: 1rem;
@@ -514,17 +528,19 @@ input[type="submit"]{
 }
 
 @media screen and (min-width:600px) {
+    .button-cv{
+        position: relative;
+        top: 3rem;
+    }
+    
     .button-cv > button{
-        top: 4rem;
+        top: 0rem;
         left: 50%;
         transform: translate(-50%);
-
-        margin-left: 17rem;
+        margin-left: 0rem;
         height: 4rem;
         width: 15rem;
-
         font-size: 25px;
-
         border-radius: 2rem;
     }
 
@@ -604,13 +620,9 @@ input[type="submit"]{
 
 @media screen and (min-width:600px) {
     .estudios{
-       /*  border: 2px solid black; */
-        
-        left: 18rem;
         top: 8rem;
-
-        margin: 0;
         width: 100%;
+        margin: 0;
     }
 
     .estudios-title{
@@ -704,8 +716,8 @@ input[type="submit"]{
     .habilidades{
         position: relative;
         top: 9rem;
-        margin-left: 37%;
-        width: 50rem;
+        margin: 0 5%;
+        width: 95%;
     }
     
     .section-title > h1{
@@ -715,8 +727,11 @@ input[type="submit"]{
     }
 
     .skills{
-        margin-right: 0rem;
-        margin-left: 0rem;
+        margin: 0;
+    }
+
+    .skill-item{
+        margin: 0;
     }
 
     .skill-item > h5{
@@ -864,12 +879,12 @@ input[type="submit"]{
         display: block;
         position: relative;
         top: 12rem;
-        left: 5%;
+        left: 0;
         /* border: 1px solid black; */
         background-color: #f9f5f2;
-        width: 80rem;
+        width: 90%;
         height: 20rem;
-        margin-left: 5%;
+        margin: 0 5%;
         padding: 1.5rem 0 0;
     }
     
@@ -1006,12 +1021,12 @@ input[type="submit"]{
 
 @media screen and (min-width:600px) {    
     .Mi-portafolio{
-        /* border: 1px solid black; */
-
-        width: 86rem;
+        position: relative;
+        width: 100%;
         position: relative;
         top: 15rem;
-        margin-left: 4%;
+        margin-left: 0%;
+        height: 35rem;
     }
     .Mi-portafolio > h2{
         font-size: 40px;
@@ -1022,21 +1037,21 @@ input[type="submit"]{
     }
 
     .contenedor-grid{
-        grid-template-rows: 29rem 29rem;
-        grid-template-columns: 32rem 27rem 16rem;
+        grid-template-rows: 35% 35%;
+        grid-template-columns: 45% 27.5% 27.5%;
         grid-template-areas: 
         "imagen1 imagen2 imagen3"
         "imagen4 . .";
     }
 
     .item-1 > img, .item-4 > img{
-        width: 30rem;
-        height: 27rem;
+        width:95%;
+        height: 95%;
     }
 
     .item-2 > img, .item-3 > img{
-        width: 25rem;
-        height: 27rem;
+        width: 95%;
+        height: 95%;
     }
 }
 
@@ -1102,10 +1117,9 @@ input[type="submit"]{
 @media screen and ( min-width:600px ){
     .contacto-section{
         position: relative;
-        top: 15rem;
-        margin-left: 28rem;
-        /* border: 1px solid black; */
-        width: 30rem;
+        top: 25rem;
+        margin-left: 0rem;
+        width: 100%;
     }
     
     .contacto-section > h2{
@@ -1180,9 +1194,9 @@ input[type="submit"]{
 @media screen and (min-width:600px) {
     .footer{
         position: relative;
-        top: 20rem;
+        top: 25rem;
         bottom: 0px;
-        width: 90rem;
+        width: 100%;
         height: 10rem;
     }
 
