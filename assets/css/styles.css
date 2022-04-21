@@ -14,7 +14,7 @@ nav{
     position:relative;
     background-color: #197f5b;
     width: 100%;
-    height: 3rem;
+    height: 5rem;
     z-index: 1;
 }
 
@@ -25,6 +25,7 @@ label{
 nav > ul{   
     float: right;
     margin-right: 20px;
+    line-height: 5rem;
 }
 
 nav > ul > li{
@@ -37,7 +38,7 @@ nav > ul > li > a{
     list-style: none;
     text-decoration: none;
     color: white; 
-    font-size: 16px;
+    font-size: 20px;
 }
 
 a.active-barra, a:hover{
@@ -93,7 +94,7 @@ a.active-barra, a:hover{
         line-height: 2rem;
         margin: 25px 0;
     }
-
+    
     nav > ul > li > a{
         font-size: 20px;
     }
@@ -602,6 +603,11 @@ input[type="submit"]{
     border-radius: 10%;
 }
 
+.tec > img{
+    width: 55px;
+    height: 60px;
+}
+
 .logo-tec, .logo-academlo{
     size: 20px;
     padding-top: .5rem;
@@ -638,6 +644,11 @@ input[type="submit"]{
         width: 20rem;
         height: 25rem;
         margin: .5rem;
+    }
+
+    .tec > img{
+        width: 145px;
+        height: 160px;
     }
 
     .logo-tec{
@@ -1076,7 +1087,7 @@ input[type="submit"]{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .contacto-section > ul > li{
