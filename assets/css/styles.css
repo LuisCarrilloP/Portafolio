@@ -69,7 +69,10 @@ a.active-barra, a:hover{
     .checkbtn{
         display: unset;
     }
-    
+    .fa-bars > img{
+        filter: invert(100%);
+    }
+
     nav{
         position: relative;
         width: 100%;
